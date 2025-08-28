@@ -88,7 +88,7 @@ export default function App() {
             excluirTarefa(item.id);
           }}
         >
-          <Text style={styles.textoBotao}>🗑️ Excluir</Text>
+          <Text style={styles.textoBotao}> Excluir tarefa 🗑️</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -96,12 +96,12 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="light" backgroundColor="#2196F3" />
+      <StatusBar style="light" backgroundColor="#ff94ce" />
       
       <View style={styles.header}>
-        <Text style={styles.titulo}>Lista de Tarefas</Text>
+        <Text style={styles.titulo}>Lista de Tarefas 📝💐</Text>
         <Text style={styles.contadorTexto}>
-          Total: {tarefas.length} tarefas
+          Total de tarefas: {tarefas.length} 
         </Text>
       </View>
 
@@ -118,7 +118,7 @@ export default function App() {
             style={styles.botaoAdicionar}
             onPress={adicionarTarefa}
           >
-            <Text style={styles.textoBotaoAdicionar}>+</Text>
+            <Text style={styles.textoBotaoAdicionar}> +</Text>
           </TouchableOpacity>
           <TouchableOpacity 
             style={styles.botaoLimpar}
@@ -137,7 +137,7 @@ export default function App() {
           ListEmptyComponent={
             <View style={styles.listaVazia}>
               <Text style={styles.textoListaVazia}>
-                Não há tarefas adcionadas
+              Não há tarefas adicionadas.🤷‍♀️
               </Text>
             </View>
           }
